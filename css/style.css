@@ -86,77 +86,55 @@ margin:0;
 
 
 /*----video----------*/
-.video-background, .video-text {
+.video-background /*.video-text*/ {
+	position:relative;
 	width:100%;
 	height:auto;
 	z-index:-100;	
 }
 
 .video-text {
-	/*font-family: 'Rubik', sans-serif;*/
-	color: #2b3955;
-	font-weight: 900;
-	-webkit-text-stroke-width: 0.5px;
-	-webkit-text-stroke-color: #fff;
-	letter-spacing: 4px;
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: auto;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	z-index:0;
-	border-color:red 2px solid;
 }
 
-.video-icon {
-	font-weight: 900;
-	color: #2b3955;
-	-webkit-text-stroke-width: 0.5px;
-	-webkit-text-stroke-color: #fff;
-	letter-spacing: 4px;
-	 position: absolute;
-    top: 80%;
-    left: 50%;
-    width: auto;
-    height: auto;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	z-index:0;
-}
-
-.video-text h1 {
-	text-transform: uppercase;
+.video-text h1, .video-text h2, .video-icon {
 	font-size:6vw;
 	padding:0 20px;
 	font-weight: 900;
-}
-
-.video-text h2 {
-	text-transform: uppercase;
-	font-size:5vw;
-	padding:0 20px;
+	position: absolute;
+	color: #2b3955;
 	font-weight: 900;
+	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: #fff;
+	letter-spacing: 4px;
+	z-index:0;
 }
 
-@media screen and (max-width: 1000px) {
-	.video-icon {top: 50%;}
-	.video-text{top: 35%;}	
+.video-text h1, .video-text h2 {
+	top:50%;
+	left:50%;
+	width:100%;
+	text-transform: uppercase;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.video-icon {
+    bottom:5px;
+	left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+	transform: translateX(-50%);
 }
 
 @media screen and (max-width: 700px) {
-	.video-icon {display: none;}	
-	.video-text{top: 20%;}
 	.video-background{margin-top:55px;}
 }
 
-@media screen and (max-width: 450px) {
-		.video-text{display:none;}	
+@media screen and (max-width: 300px) {
+	.video-text{display:none;}	
 }
 
 /*--animation of chevron--*/
