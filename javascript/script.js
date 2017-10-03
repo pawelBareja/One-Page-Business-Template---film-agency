@@ -101,7 +101,6 @@ $('a[href*="#"]:not([href="#"]):not([href="#show"]):not([href="#hide"])').click(
 			}
 		}
 	});
-
 	
 	$(document).ready(function() {
   $('#play-video').on('click', function(ev) {
